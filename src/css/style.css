@@ -17,19 +17,30 @@ body {
     background-origin: border-box;
 }
 
-main {
+header {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100%;
-    padding: 0 20%;
 }
 
 .event-logo {
     padding: 10px 0;
 }
+
+main {
+    padding: 0 20%;
+}
+
+/* secção de cadastro (form) */
+
+/* .cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+} */
 
 .slogan-title {
     font-weight: 800;
@@ -42,5 +53,56 @@ main {
     text-align: center;
 }
 
+#formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20%;
+}
+
+#formulario label {
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+#formulario .container_input-avatar {
+    background-color: hsla(246, 15%, 58%, 0.144);
+    border: 1px dashed hsl(0, 0%, 100%);
+    border-radius: 4px;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+#formulario #upload-avatar {
+    opacity: 0;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.container_input-avatar img {
+    background-color: hsla(246, 15%, 58%, 0.623);
+    border: 1px solid hsla(252, 6%, 83%, 0.384);
+    border-radius: 17px;
+    padding: 5px;
+    width: 20%;
+}
+
+.container_input-avatar p {
+    padding-top: 10px;
+}
+
+#formulario small {
+    font-weight: 300;
+    padding-top: 10px;
+    color: hsl(245, 19%, 35%);
+}
 
 
+
+
+/* seção de ticket */

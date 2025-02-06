@@ -16,18 +16,23 @@
     </style> -->
     </head>
     <body>
-        <main>
+        <header>
             <img src="./src/assets/images/logo-full.svg" alt="Logo do evento" class="event-logo">
-            <h1 class="slogan-title">Your Journey to Coding Conf 2025 Starts Here!</h1>
-            <p class="text-descripiton">Secure your spot at next year's biggest coding conference.</p>
-            <!-- Form starts -->
-            <section>
-                <form action="">
+        </header>
+        <main>
+            <section class="cadastro">
+                <h1 class="slogan-title">Your Journey to Coding Conf 2025 Starts Here!</h1>
+                <p class="text-descripiton">Secure your spot at next year's biggest coding conference.</p>
+
+                <!-- Form starts -->
+                <form action="" id="formulario">
                     <label for="upload-avatar">Upload Avatar</label>
-                    <input type="file" accept=".jpg, ,.png" id="upload-avatar">
+                    <div class="container_input-avatar">
                         <img src="./src/assets/images/icon-upload.svg" alt="ícone de upload">
-                        Drag and drop or click to upload
-                    <small> Upload your photo (JPG or PNG, max size: 500KB).</small>
+                        <p>Drag and drop or click to upload</p>
+                        <input type="file" accept=".jpg, ,.png" id="upload-avatar">
+                    </div>
+                    <small> Upload your photo (JPG or PNG, max size: 500KB).</small>    
 
                     <label for="full-name">Full Name</label>
                     <input type="text" id="full-name">

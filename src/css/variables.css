@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Inconsolata';
+    src: url(../assets/fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
+}
+
+
+:root{
+    --principal-font: 'Inconsolata', Courier, monospace;
+}

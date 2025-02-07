@@ -1,20 +1,9 @@
-@font-face {
-    font-family: 'Inconsolata';
-    src: url(../assets/fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
+*{
+    font-family: var(--principal-font)
 }
 
-* {
-    padding: 0px;
-	margin: 0px;
-	box-sizing: border-box;
-    font-family: 'Inconsolata', Courier, monospace;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="file"]{
-    background: none;
-    border: none;
+section:not(.active){
+    display: none;
 }
 
 body {

@@ -10,6 +10,13 @@
     font-family: 'Inconsolata', Courier, monospace;
 }
 
+input[type="text"],
+input[type="email"],
+input[type="file"]{
+    background: none;
+    border: none;
+}
+
 body {
     color: #fff;
     background: url(../assets/images/background-desktop.png) no-repeat;
@@ -32,15 +39,6 @@ main {
 }
 
 /* secção de cadastro (form) */
-
-/* .cadastro {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 80vh;
-    width: 100%;
-} */
 
 .slogan-title {
     font-weight: 800;
@@ -66,7 +64,7 @@ main {
 
 #formulario .container_input-avatar {
     background-color: hsla(246, 15%, 58%, 0.144);
-    border: 1px dashed hsl(0, 0%, 100%);
+    border: 0.1px dashed hsl(0, 0%, 100%);
     border-radius: 4px;
     display: grid;
     justify-content: center;
@@ -102,7 +100,27 @@ main {
     color: hsl(245, 19%, 35%);
 }
 
+#formulario  #full-name, #email-address, #github-user {
+    color: #fff;
+    background-color: hsla(246, 15%, 58%, 0.144);
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 4px;
+    padding: 10px;
+    font-weight: 400;
+}
 
+#formulario button{
+    cursor: pointer;
+    margin: 10px 0 0 0;
+    padding: 13px;
+    border: none;
+    border-radius: 11px;
+    text-align: center;
+    background-color: hsl(7, 88%, 67%);
+    color: hsl(248, 70%, 10%);
+    font-weight: 900;
+    font-size: 20px;
+}
 
 
 /* seção de ticket */

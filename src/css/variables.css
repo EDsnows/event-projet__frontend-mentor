@@ -3,7 +3,25 @@
     src: url(../assets/fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
 }
 
-
 :root{
     --principal-font: 'Inconsolata', Courier, monospace;
+
+    /* cores neutras */
+    --neutral-color-0:rgb(255, 255, 255);
+    --neutral-color-300: rgb(210, 209, 214);
+    --neutral-color-500: rgb(135, 132, 164);
+    --neutral-color-700: rgb(75, 72, 106);
+    --neutral-color-900: rgb(12, 8, 43);
+    
+    /* cores com opacidade (alpha) */ 
+    --neutral-color-0_a1:  rgba(255, 255, 255, 0.300);
+    --neutral-color-0_a2:  rgba(255, 255, 255, 0.750) ;
+    --neutral-color-300_a1: rgba(210, 209, 214, 0.380);
+    --neutral-color-300_a2: rgba(210, 209, 214, 0.750);
+    --neutral-color-500_a1: rgba(135, 132, 164, 0.130);
+    --neutral-color-500_a2: rgba(135, 132, 164, 0.300);
+
+    /* cores principais */
+    --primary-color-500: rgb(245, 114, 97);
+    --primary-color-700: rgb(225, 97, 81);
 }

@@ -131,7 +131,7 @@ section.ticket-section {
     }
 
     .congrats-title .user-name-highlight {
-        background: linear-gradient(90deg, rgb(243, 115, 98), rgb(255, 255, 255));
+        background: linear-gradient(90deg, var(--primary-color-500), var(--neutral-color-0));
         background-clip: text; 
         -webkit-background-clip: text; 
         color: transparent

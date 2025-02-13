@@ -88,9 +88,24 @@ section.cadastro{
         padding-top: 10px;
     }
     
-    #formulario small {
-        font-weight: 400;
+    .upload-info {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px;
         padding-top: 10px;
+    }
+
+    .upload-info .icon-info {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url(../assets/images/icon-info.svg) center no-repeat;
+    }
+
+    .upload-info small {
+        font-weight: 400;
+        padding-top: 2px;
         color: var(--neutral-color-300_a2);
     }
     
@@ -137,13 +152,13 @@ section.ticket-section {
         color: transparent
     }
 
-    .info {
+    .instruction-info {
         font-weight: 500;
         text-align: center;
         margin-top: 20px;
     }
 
-    .info .user-email-highlight {
+    .instruction-info .user-email-highlight {
         color: var(--primary-color-500);
     }
 
@@ -214,17 +229,19 @@ section.ticket-section {
         margin-bottom: 10px;
     }
 
-
+    
     .user-data .user-nick-name-github {
         font-size: 15px;
         font-weight: 400;
         color: var(--neutral-color-0_a2);
+        display: flex;
     }
-
-    .user-data .user-nick-name-github i {
-        color:  var(--neutral-color-0);
+    
+    .user-data .icon-github {
+        width: 23px;
+        height: 100%;
+        background: url(../assets/images/icon-github.svg) center no-repeat;
     }
-
 
     .ticket-description .ticket-number {
         display: flex;

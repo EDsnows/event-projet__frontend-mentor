@@ -1,0 +1,53 @@
+*{
+    font-family: var(--principal-font)
+}
+
+section.register-section:not(.active),
+section.ticket-section:not(.active)
+{
+    display: none;
+}
+
+body {
+    color: var(--neutral-color-0);
+    background: url(../assets/images/background-desktop.png) no-repeat;
+    background-size: cover;
+    background-origin: border-box;
+    height: 100vh;
+    display: grid;
+    grid:
+        "header" 50px
+        "main" 1fr
+        "footer" 50px / auto
+    ;
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &
+    .event-logo {
+        padding: 10px 0;
+    }
+}
+
+main {
+    padding: 0 20%;
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    padding: 15px 0;
+    & 
+    .attribution {
+            font-size: 11px; 
+            text-align: center
+    }
+    
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+}

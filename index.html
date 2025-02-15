@@ -5,28 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/variables.css">
-    <link rel="stylesheet" href="./src/css/style.css"> 
+    <link rel="stylesheet" href="./src/css/style-global.css">
+    <link rel="stylesheet" href="./src/css/style-register.css">
+    <link rel="stylesheet" href="./src/css/style-ticket.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/images/favicon-32x32.png">
     
     <title>Frontend Mentor | Conference ticket generator</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <!-- <style>
-        .attribution { font-size: 11px; text-align: center; }
-        .attribution a { color: hsl(228, 45%, 44%); }
-    </style> -->
     </head>
     <body>
-        <header class="cabecalho">
+        <header class="header">
             <img src="./src/assets/images/logo-full.svg" alt="Logo do evento" class="event-logo">
         </header>
         <main>
-            <section class="cadastro" id="active">
+            <section class="register-section active">
                 <h1 class="slogan-title">Your Journey to Coding Conf <br> 2025 Starts Here!</h1>
-                <p class="text-descripiton">Secure your spot at next year's biggest coding conference.</p>
+                <p class="text-description">Secure your spot at next year's biggest coding conference.</p>
 
                 <!-- Form starts -->
-                <form action="" id="formulario">
+                <form action="" id="form">
                     <label for="upload-avatar">Upload Avatar</label>
                     <div class="container_input-avatar">
                         <div class="container_image-upload">
@@ -83,11 +79,11 @@
             </section>
             <!-- Generated tickets ends -->
         </main>
-    <!-- <footer>
+    <footer>
         <div class="attribution">
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-            Coded by <a href="#">Eduardo (EDsnows) Neves</a>.
+            Coded by <a href="https://github.com/EDsnows" target="_blank">Eduardo (EDsnows) Neves</a>.
         </div>
-    </footer> -->
+    </footer>
 </body>
 </html>

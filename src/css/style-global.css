@@ -1,10 +1,9 @@
-*{
-    font-family: var(--principal-font)
+* {
+    font-family: var(--principal-font);
 }
 
-section.register-section:not(.active),
-section.ticket-section:not(.active)
-{
+section.register-section:not(.section-active),
+section.ticket-section:not(.section-active) {
     display: none;
 }
 
@@ -18,8 +17,7 @@ body {
     grid:
         "header" 50px
         "main" 1fr
-        "footer" 50px / auto
-    ;
+        "footer" 50px / auto;
 }
 
 .header {
@@ -27,8 +25,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    &
-    .event-logo {
+    & .event-logo {
         padding: 10px 0;
     }
 }
@@ -41,12 +38,11 @@ main {
 footer {
     grid-area: footer;
     padding: 15px 0;
-    & 
-    .attribution {
-            font-size: 11px; 
-            text-align: center
+    & .attribution {
+        font-size: 11px;
+        text-align: center;
     }
-    
+
     .attribution a {
         color: hsl(228, 45%, 44%);
     }

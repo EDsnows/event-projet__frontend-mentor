@@ -3,6 +3,8 @@ preview.jpg
 *.txt
 /design
 ticket-page.html
+responsive.css
+.gitignore
 
 # Design files (please do not remove 🙂)
 *.sketch

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/reset.css">
@@ -9,81 +10,89 @@
     <link rel="stylesheet" href="./src/css/style-register.css">
     <link rel="stylesheet" href="./src/css/style-ticket.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/images/favicon-32x32.png">
-    
+
     <title>Frontend Mentor | Conference ticket generator</title>
-    </head>
-    <body>
-        <header class="header">
-            <img src="./src/assets/images/logo-full.svg" alt="Logo do evento" class="event-logo">
-        </header>
-        <main>
-            <section class="register-section active">
-                <h1 class="slogan-title">Your Journey to Coding Conf <br> 2025 Starts Here!</h1>
-                <p class="text-description">Secure your spot at next year's biggest coding conference.</p>
+</head>
 
-                <!-- Form starts -->
-                <form action="" id="form">
-                    <label for="upload-avatar">Upload Avatar</label>
-                    <div class="container_input-avatar">
-                        <div class="container_image-upload">
-                            <img src="./src/assets/images/icon-upload.svg" alt="ícone de upload">
+<body>
+    <header class="header">
+        <img src="./src/assets/images/logo-full.svg" alt="Logo do evento" class="event-logo">
+    </header>
+    <main>
+        <section class="register-section section-active">
+            <h1 class="slogan-title">Your Journey to Coding Conf <br> 2025 Starts Here!</h1>
+            <p class="text-description">Secure your spot at next year's biggest coding conference.</p>
+
+            <!-- Form starts -->
+            <form action="" id="form">
+                <label for="upload-avatar">Upload Avatar</label>
+                <div class="container_input-avatar">
+                    <div class="container_image-upload">
+                        <img src="./src/assets/images/icon-upload.svg" alt="ícone de upload">
+                    </div>
+                    <p>Drag and drop or click to upload</p>
+                    <input type="file" name="file" accept=".jpg, .png" id="upload-avatar">
+                </div>
+                <div class="upload-info">
+                    <i class="icon-info"></i><small> Upload your photo (JPG or PNG, max size: 500KB).</small>
+                </div>
+
+                <label for="full-name">Full Name</label>
+                <input type="text" name="name" id="full-name">
+
+                <label for="email-address">Email Address</label>
+                <input type="email" name="email" id="email-address" placeholder="example@email.com">
+
+                <label for="github-user">GitHub Username</label>
+                <input type="text" name="github-user" id="github-user" placeholder="@yourusername">
+
+                <button type="submit" id="submit">Generate My Ticket</button>
+            </form>
+        </section>
+        <!-- Form ends -->
+
+        <!-- Generated tickets starts -->
+        <section class="ticket-section">
+            <h1 class="congrats-title">Congrats, <span class="user-name-highlight">Eduardo de Castro</span>! <br>Your
+                ticket is ready.</h1>
+            <p class="instruction-info">We've emailed your ticket to <br><span
+                    class="user-email-highlight">email-teste@gmail.com</span> and will send updates in <br> the run up
+                to the event.</p>
+
+            <div class="container_ticket">
+                <div class="ticket">
+                    <div class="ticket-description">
+                        <div class="ticket-info">
+                            <div class="event-info">
+                                <img src="./src/assets/images/logo-full.svg" alt="Logo do evento" class="event-logo">
+                                <p class="data-and-local">Jan 31, 2025 / Austin, TX</p>
+                            </div>
+                            <div class="user-info">
+                                <img src="./src/assets/images/image-avatar.jpg" alt="Imagem do avatar do usuário"
+                                    class="user-avatar">
+                                <div class="user-data">
+                                    <p class="user-name">Jonatan Kristof</p>
+                                    <p class="user-nick-name-github"><i class="icon-github"
+                                            src="./src/assets/images/icon-github.svg"></i> @joantankristof0101</p>
+                                </div>
+                            </div>
                         </div>
-                        <p>Drag and drop or click to upload</p>
-                        <input type="file" name="file" accept=".jpg, ,.png" id="upload-avatar">
-                    </div>
-                    <div class="upload-info">
-                        <i class="icon-info"></i><small> Upload your photo (JPG or PNG, max size: 500KB).</small>    
-                    </div>
-
-                    <label for="full-name">Full Name</label>
-                    <input type="text" name="name" id="full-name">
-
-                    <label for="email-address">Email Address</label>
-                    <input type="email" name="email" id="email-address" placeholder="example@email.com">
-
-                    <label for="github-user">GitHub Username</label>
-                    <input type="text" name="github-user" id="github-user" placeholder="@yourusername">
-
-                    <button type="submit" id="submit">Generate My Ticket</button>
-                </form>
-            </section>
-            <!-- Form ends -->
-
-            <!-- Generated tickets starts -->
-            <section class="ticket-section">
-                <h1 class="congrats-title">Congrats, <span class="user-name-highlight">Eduardo de Castro</span>! <br>Your ticket is ready.</h1>
-                <p class="instruction-info">We've emailed your ticket to <br><span class="user-email-highlight">email-teste@gmail.com</span> and will send updates in <br> the run up to the event.</p>
-
-                <div class="container_ticket">
-                    <div class="ticket">
-                        <div class="ticket-description">
-                            <div class="ticket-info">
-                                <div class="event-info">
-                                    <img src="./src/assets/images/logo-full.svg" alt="Logo do evento" class="event-logo">
-                                    <p class="data-and-local">Jan 31, 2025 / Austin, TX</p>
-                                </div>
-                                <div class="user-info">
-                                    <img src="./src/assets/images/image-avatar.jpg" alt="Imagem do avatar do usuário" class="user-avatar">
-                                    <div class="user-data">
-                                        <p class="user-name">Jonatan Kristof</p>
-                                        <p class="user-nick-name-github"><i class="icon-github" src="./src/assets/images/icon-github.svg"></i> @joantankristof0101</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ticket-number">
-                                <span>#00000</span>
-                            </div>
+                        <div class="ticket-number">
+                            <span>#00000</span>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- Generated tickets ends -->
-        </main>
+            </div>
+        </section>
+        <!-- Generated tickets ends -->
+    </main>
     <footer>
         <div class="attribution">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
             Coded by <a href="https://github.com/EDsnows" target="_blank">Eduardo (EDsnows) Neves</a>.
         </div>
     </footer>
+    <script src="./src/js/index.js"></script>
 </body>
+
 </html>

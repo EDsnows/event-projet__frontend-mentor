@@ -1,12 +1,11 @@
 /* secção de cadastro (form) */
-section.register-section{
-    &
-    .slogan-title {
+section.register-section {
+    & .slogan-title {
         font-weight: 800;
         font-size: 44px;
         text-align: center;
     }
-    
+
     .text-description {
         font-weight: 500;
         text-align: center;
@@ -17,12 +16,12 @@ section.register-section{
         flex-direction: column;
         padding: 20px 20%;
     }
-    
+
     #form label {
         margin: 15px 0;
         cursor: pointer;
     }
-    
+
     #form .container_input-avatar {
         background-color: var(--neutral-color-500_a1);
         border: 0.1px dashed var(--neutral-color-0);
@@ -34,7 +33,11 @@ section.register-section{
         padding: 16px 0;
         position: relative;
     }
-    
+
+    #form .container_input-avatar.active {
+        background-color: rgba(135, 132, 164, 0.4);
+    }
+
     #form #upload-avatar {
         opacity: 0;
         position: absolute;
@@ -43,7 +46,7 @@ section.register-section{
         height: 100%;
         cursor: pointer;
     }
-    
+
     .container_input-avatar .container_image-upload {
         background-color: var(--neutral-color-500_a2);
         border: 1px solid var(--neutral-color-300_a1);
@@ -53,11 +56,11 @@ section.register-section{
         justify-content: center;
         align-items: center;
     }
-    
+
     .container_input-avatar p {
         padding-top: 10px;
     }
-    
+
     .upload-info {
         display: flex;
         justify-content: flex-start;
@@ -78,8 +81,10 @@ section.register-section{
         padding-top: 2px;
         color: var(--neutral-color-300_a2);
     }
-    
-    #form  #full-name, #email-address, #github-user {
+
+    #form #full-name,
+    #email-address,
+    #github-user {
         color: var(--neutral-color-0);
         background-color: var(--neutral-color-500_a1);
         border: 1px solid var(--neutral-color-0);
@@ -87,8 +92,8 @@ section.register-section{
         padding: 10px;
         font-weight: 400;
     }
-    
-    #form button{
+
+    #form button {
         cursor: pointer;
         margin-top: 15px;
         padding: 13px;

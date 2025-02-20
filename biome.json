@@ -33,10 +33,15 @@
     "javascript": {
         "formatter": {
             "enabled": true,
-            "bracketSpacing": true,
+            "bracketSpacing": false,
+            "bracketSameLine": true,
             "jsxQuoteStyle": "single",
+            "quoteStyle": "single",
             "semicolons": "always",
-            "trailingCommas": "all"
+            "trailingCommas": "es5",
+            "arrowParentheses": "asNeeded",
+            "attributePosition": "auto",
+            "quoteProperties": "preserve"
         }
     },
     "json": {

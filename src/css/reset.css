@@ -1,5 +1,5 @@
 * {
-    padding: 0px;
+	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;
 }
@@ -7,7 +7,7 @@
 input[type="text"],
 input[type="email"],
 input[type="file"],
-button{
-    background: none;
-    border: none;
+button {
+	background: none;
+	border: none;
 }

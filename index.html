@@ -28,10 +28,14 @@
                 <label for="upload-avatar">Upload Avatar</label>
                 <div class="container_input-avatar">
                     <div class="container_image-upload">
-                        <img src="./src/assets/images/icon-upload.svg" alt="ícone de upload">
+                        <img class="image-default" src="./src/assets/images/icon-upload.svg" alt="ícone de upload">
                     </div>
-                    <p>Drag and drop or click to upload</p>
-                    <input type="file" name="file" accept=".jpg, .png" id="upload-avatar">
+                    <div class="container_secondary-info">
+                        <p class="text-info-actions active">Drag and drop or click to upload</p>
+                        <button type="button" class="btn-remove-image">Remove image</button>
+                        <button type="button" class="btn-change-image">Change image</button>
+                    </div>
+                    <input type="file" name="file" accept=".jpg, .png" id="upload-avatar" multiple>
                 </div>
                 <div class="upload-info">
                     <i class="icon-info"></i><small> Upload your photo (JPG or PNG, max size: 500KB).</small>

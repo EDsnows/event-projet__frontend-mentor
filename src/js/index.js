@@ -24,7 +24,11 @@ containerDragAndDrop.addEventListener('dragend', onLeave);
 containerDragAndDrop.addEventListener('dragleave', onLeave);
 
 inputFile.addEventListener('change', event => {
-    console.log('entrou no evento');
+    if (event.target.files.length > 1 ){
+        alert('somente uma única imagem pode ser selecionada')
+        return
+    }
+
     const file = event.target.files[0];
     const type = file.type;
     const formats = ['image/jpeg', 'image/png'];

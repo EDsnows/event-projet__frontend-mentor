@@ -23,31 +23,42 @@
             <h1 class="slogan-title">Your Journey to Coding Conf <br> 2025 Starts Here!</h1>
             <p class="text-description">Secure your spot at next year's biggest coding conference.</p>
 
-            <form action="" id="form">
-                <label for="upload-avatar">Upload Avatar</label>
-                <div class="container_input-avatar">
-                    <div class="container_image-upload">
-                        <img class="image-default" src="./src/assets/images/icon-upload.svg" alt="ícone de upload">
+            <form id="my-form">
+                <div class="container_input-avatar erro-detective">
+                    <label for="upload-avatar">Upload Avatar</label>
+                    <div class="container_input-action-avatar">
+                        <div class="container_image-upload">
+                            <img class="image-default" src="./src/assets/images/icon-upload.svg" alt="ícone de upload">
+                        </div>
+                        <div class="container_secondary-info">
+                            <p class="text-info-actions active">Drag and drop or click to upload</p>
+                            <button type="button" class="btn-remove-image">Remove image</button>
+                            <button type="button" class="btn-change-image">Change image</button>
+                        </div>
+                        <input required type="file" name="file" accept=".jpg, .png" id="upload-avatar">
                     </div>
-                    <div class="container_secondary-info">
-                        <p class="text-info-actions active">Drag and drop or click to upload</p>
-                        <button type="button" class="btn-remove-image">Remove image</button>
-                        <button type="button" class="btn-change-image">Change image</button>
+                    <div class="input-warning">
+                        <i class="icon-info"></i><small> Upload your photo (JPG or PNG, max size: 500KB)</small>
                     </div>
-                    <input type="file" name="file" accept=".jpg, .png" id="upload-avatar">
-                </div>
-                <div class="upload-info">
-                    <i class="icon-info"></i><small> Upload your photo (JPG or PNG, max size: 500KB).</small>
                 </div>
 
                 <label for="full-name">Full Name</label>
-                <input type="text" name="name" id="full-name">
+                <input required type="text" name="name" id="full-name">
+                <div class="input-warning">
+                    <i class="icon-info"></i><small>Please do not leave this field empty.</small>
+                </div>
 
                 <label for="email-address">Email Address</label>
-                <input type="email" name="email" id="email-address" placeholder="example@email.com">
+                <input required type="email" name="email" id="email-address" placeholder="example@email.com">
+                <div class="input-warning">
+                    <i class="icon-info"></i><small>Please enter a valid email address</small>
+                </div>
 
                 <label for="github-user">GitHub Username</label>
-                <input type="text" name="github-user" id="github-user" placeholder="@yourusername">
+                <input required type="text" name="github-user" id="github-user" placeholder="@yourusername">
+                <div class="input-warning">
+                    <i class="icon-info"></i><small>Please do not leave this field empty.</small>
+                </div>
 
                 <button type="submit" id="submit">Generate My Ticket</button>
             </form>
